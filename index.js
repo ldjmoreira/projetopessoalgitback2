@@ -16,7 +16,7 @@ consign()// app é passado para todas as instancias do then do consign
 .then('./config/routes.js')
 .into(app)
 
-
+console.log("Database_URL", process.env.DATABASE_URL);
 
 app.listen(process.env.PORT || 4006 )
 
