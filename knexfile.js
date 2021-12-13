@@ -4,8 +4,11 @@
 module.exports = {
 	
 	client: 'pg',
-	connection: process.env.DATABASE_URL,
-	ssl: false
+	connection: {
+		connectionString :	process.env.DATABASE_URL,
+		ssl: false
+	} 
+	
 	/*
 	connection: {
 		host : '127.0.0.1',
