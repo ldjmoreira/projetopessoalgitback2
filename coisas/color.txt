@@ -1,0 +1,24 @@
+vermelho #e73131
+.topnavt {
+background-color: rgba(0, 0, 0, 0.801);
+
+    const change= (event)=> {
+        event.preventDefault()
+        setState({ user: state.user, showSignup: !state.showSignup, list: state.list })
+    }
+
+
+
+DROP TABLE IF EXISTS adm_treinos;
+
+CREATE TABLE adm_treinos (/* horario das aulas disponíveis pela adm*/
+    id INT(6) AUTO_INCREMENT PRIMARY KEY, 
+    tipo_treino INT(6) NOT NULL,
+    estado INT(6),
+    horario TIME NOT NULL,
+    qtd INT(6)  NOT NULL,
+    ativo BOOLEAN NOT NULL DEFAULT true,
+    FOREIGN KEY (tipo_treino) REFERENCES tipo_treinos(id)
+    
+);
+

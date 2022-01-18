@@ -8,11 +8,12 @@ const db = require('./config/db')
 app.db = db
 
 consign()// app é passado para todas as instancias do then do consign
-.include('./config/middlewares.js')
+.include('./config/passport.js')
+.then('./config/middlewares.js')
 .then('./api/validation.js')
 .then('./api/date_utils.js')
 .then('./api')
-
+.then('./schedule')
 .then('./config/routes.js')
 .into(app)
 

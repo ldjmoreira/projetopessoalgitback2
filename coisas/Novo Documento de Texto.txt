@@ -1,0 +1,12 @@
+                    <div className={`index-all-2 ${proj.state3 ? '' : 'w3-hide'} `}>
+                        <div className="index-all-2-text">
+                            <h3>Projeto Senhas</h3>
+                            <p>
+                            Projeto autoral de uma ideia que sempre tive em mente. Consiste em um site em que você coloca as promessas de um candidato local e marca se ele cumpriu as determinadas promessas. Além disso, é possível escrever reclamações e mais. Feito em diversas bibliotecas de Front-End (react.js,vue.js) e de  Back-end ( laravel, express.js e vanilha php) o projeto se encontra no GitHub. Só clicar o link abaixo
+                            </p>
+                            <a href="https://facebook.com" target="_blank">GITHUB <i class="fa fa-external-link" aria-hidden="true"></i></a>
+                        </div>
+                        <div className="index-all-2-img">
+                            <img src={image4txt} alt="somehting" width="555" height="354" />
+                        </div>
+                    </div>
