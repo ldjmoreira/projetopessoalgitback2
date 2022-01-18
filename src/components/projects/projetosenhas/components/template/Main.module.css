@@ -1,0 +1,12 @@
+.content {
+    
+    width:100%;
+
+    height: fit-content;
+    min-height: 100vh;
+    display: flex;
+    margin: 0 auto;
+    padding: 10px;   
+    padding-top: 30px;
+    background: #EDF2F6;
+}

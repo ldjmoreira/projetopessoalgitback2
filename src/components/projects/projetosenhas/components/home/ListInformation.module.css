@@ -1,0 +1,100 @@
+.menu-list {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    
+    background-color: white;
+    border: 1px solid #e6ecf5;
+    border-radius: 5px;
+    box-shadow: 0px 0px 34px 0px rgba(63,66,87,.1);
+    margin: 0px 20px 20px 20px;
+    padding: 15px;
+}
+
+.table-senhas-ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    
+}
+.table-senhas-li {
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.menu-list .table-senhas-ul .table-senhas-li .date {
+    color: #888da8;
+    width: 18%;
+    min-width: 100px;
+    font-weight: 400;
+    font-size: .812rem;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+}
+.menu-list .table-senhas-ul .table-senhas-li .position-bold {
+    color: #646575;
+    width: 17%;
+    min-width: 100px;
+    font-weight: 800;
+    font-size: .812rem;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+}
+.menu-list .table-senhas-ul .table-senhas-li .type-bold {
+    color: #646575;
+    width: 25%;
+    min-width: 100px;
+    font-weight: 800;
+    font-size: .812rem;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+}
+.menu-list .table-senhas-ul .table-senhas-li .button {
+
+    width: 7%;
+    min-width: 25px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #FD6341;
+    
+    font-size: 2em;
+}
+.menu-list .table-senhas-ul .table-senhas-li .button:hover {
+
+    width: 7%;
+    min-width: 25px;
+    display: flex;
+    align-items: center;
+    text-shadow: 1px 1px 1px #ccc;
+    color: #FD6341;
+    text-shadow: 1px 1px 1px #ccc;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+
+    .table-senhas-li {
+        list-style: none;
+        text-decoration: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        
+    }
+  }
+

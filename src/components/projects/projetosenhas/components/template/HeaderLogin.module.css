@@ -1,0 +1,55 @@
+.header-login {
+  display: flex;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.header-login .nav-loaded .nav_items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  background: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(23,24,26,.11);
+  border-radius: 5px;
+  display: flex;
+}
+
+
+.header-login .nav-loaded .nav_items .nav_item  {
+  align-items: center;
+  border-right: 1px solid rgba(23,24,26,.11) ;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  transition: background-color .2s ease-out;
+}
+
+.header-login .nav-loaded .nav_items .nav_item:hover  {
+  align-items: center;
+  border-right: 1px solid rgba(23,24,26,.11) ;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  transition: background-color blue .2s ease-out;
+  background: rgb(185, 78, 78);
+}
+
+.header-login .nav-loaded .nav_items .nav_item .nav_link {
+  align-items: center;
+  color: inherit;
+  display: flex;
+  outline: 0;
+  text-decoration: none;
+} 
+
+.header-login .nav-loaded .nav_items .nav_item .nav_link .nav_label {
+color: #17181a ;
+font-size: .875rem;
+font-weight: 500;
+padding: 10px ;
+text-decoration: none;
+} 
+

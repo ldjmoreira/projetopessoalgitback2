@@ -1,0 +1,530 @@
+.App {
+    background-color: tomato;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    
+}
+/*header*/
+.topnavt {
+    width: 100%;
+    height: 68px;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .topnavt a {
+    float: left;
+    display: block;
+    color: #369;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .topnavt a.logo {
+    float: left;
+    display: block;
+    color: #369;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 22.4px;
+    font-weight: 700;
+  }
+
+  .topnavt a.logo:hover {
+    float: left;
+    display: block;
+    color: rgb(70, 160, 216);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 22.4px;
+    font-weight: 700;
+  }
+
+
+  .topnavt a.nactive {
+    float: right;
+    display: block;
+    color: #369;
+    text-align: center;
+    padding: 16px 52px 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    
+    font-weight: 400;
+    transition: all 0.2s ease;
+  }
+
+  
+
+  .topnavt a.active {
+    float: right;
+    display: block;
+    color: #38B;
+    text-align: center;
+    padding: 16px 52px 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    opacity: 1;
+    font-weight: 400;
+    transition: all 0.2s ease;
+  }
+  
+  .topnavt a:hover {
+    float: right;
+    display: block;
+    color: #38B;
+    text-align: center;
+    padding: 16px 52px 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    opacity: 1;
+    font-weight: 400;
+    transition: all 0.2s ease;
+  }
+  
+
+  
+  .topnavt .icon {
+    display: none;
+  }
+  /**/
+
+  
+ .content {
+     background-color: aqua;
+ }
+ 
+  @media screen and (max-width: 620px) {
+    .topnavt a:not(:first-child) {
+        display: none;
+    }
+    .topnavt a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 620px) {
+    .topnavt.responsive {
+        position: sticky;
+        width: 100%;
+        height: 45px;
+        background-color: #fff;
+        
+    }
+    .topnavt.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+
+    .topnavt.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+      background-color: #fff;
+      opacity: 1;
+      
+    }
+    .topnavt.responsive a:hover {
+        float: none;
+        display: block;
+        text-align: left;
+        background-color: #fff;
+        opacity: 1;
+      }
+    
+  }
+  /**/
+  /*escopo*/
+  .index-main {
+    width: 100%;
+      
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .index-all-c {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+    }
+    .index-limited {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        width: 100%;
+        height: fit-content;
+        background-color: #fff;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    /**/
+    /*paralax*/
+    .parallax {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* The image used */
+        background-image: url('./assets/infinite-loop-01.jpg');
+      
+        /* Full height */
+        height: 900px; 
+        width: 100%;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .parallax2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* The image used */
+        background-image: url('./assets/infinite-loop-02.jpg');
+      
+        /* Full height */
+        height: 900px; 
+        width: 100%;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .img-carousel-face {
+        text-align: justify;
+      }
+      .parallax3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* The image used */
+        background-image: url('./assets/infinite-loop-03.jpg');
+      
+        /* Full height */
+        height: 1100px; 
+        width: 100%;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+      @media only screen and (max-device-width: 1366px) {
+          /*
+        .parallax {
+          background-attachment: scroll;
+        }
+        */
+      }
+      /*paralax-box*/
+      .paralax-box { 
+          display: flex;
+          flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          color: #fff;
+          text-align: center;
+          height: 50%;
+          
+      }
+      .paralax-box h2 {
+          font-size: 56px;
+          font-weight: 500px;
+          text-shadow:rgb(51, 51, 51) 2px 2px 2px ;
+      }
+    .paralax-box p {
+        font-size: 20px;
+        font-weight: 400;
+        text-shadow:rgb(51, 51, 51) 2px 2px 2px ;
+    }
+
+    .paralax-box2 h2 {
+      font-size: 56px;
+      font-weight: 500px;
+      
+  }
+.paralax-box2 p {
+    font-size: 20px;
+    font-weight: 400;
+    
+}
+    /*paralax-button*/
+    .paralax-box-button {
+        height: 50%;
+    }
+    .paralax-button {
+        
+        
+        color: #fff;
+        padding: 15px 40px;
+
+        background-color: #357;
+
+    }
+    /*index-white*/        
+    .index-all-white {
+            width: 100%;
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            
+        }
+        .index-limited-white-c  {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            width: 100%;
+            height: fit-content;
+            background-color: #fff;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+        .index-limited-white-c-up {
+              padding: 10px;  
+              margin-bottom: 10px;
+        }
+        .index-limited-white-c-up h2 {
+            font-size: 41px;
+            font-weight: 400px;
+            text-shadow: none;
+            color: #37A;
+        }
+        .index-limited-white-c-up p {
+            font-size: 19px;
+            font-weight: 400px;
+            text-shadow: none;
+            color: #707070;
+            line-height: 36px;
+        }
+
+          .index-limited-white-c-up2 {
+            padding: 10px;  
+            margin-bottom: 10px;
+      }
+      .index-limited-white-c-up2 h2 {
+          font-size: 41px;
+          font-weight: 400px;
+          color: #fff;
+          text-shadow:rgb(51, 51, 51) 0px 0px 0px ;
+      }
+      .index-limited-white-c-up2 p {
+          font-size: 13px;
+          font-weight: 100px;
+          color: #fff;
+          text-shadow:rgb(51, 51, 51) 0px 0px 0px ;
+          margin-bottom: 50px;
+      }
+
+
+
+        .index-limited-white-c-down {
+            padding: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .index-limited-white-c-down-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+
+        }   
+        .index-limited-white-c-down-box-img {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-self: start;
+            width: 20%;
+            color: #37A;
+            font-size:28px;
+        }  
+        .index-limited-white-c-down-box-text {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+            align-items: center;
+            width: 80%;
+            color: #37A;
+            text-align: left;
+        }     
+/* Slideshow */
+
+.slideshow {
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 500px;
+  }
+  
+  .slideshowSlider {
+    white-space: nowrap;
+    transition: ease 1000ms;
+    
+  }
+
+  
+  .slide {
+    display: inline-block;
+  
+    height: 400px;
+    width: 100%;
+    border-radius: 40px;
+  }
+  
+  /* Buttons */
+  
+  .slideshowDots {
+    text-align: center;
+  }
+  
+  .slideshowDot {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+  
+    cursor: pointer;
+    margin: 15px 7px 0px;
+  
+    background-color: #c4c4c4;
+  }
+  
+  .slideshowDot.active {
+    background-color: #6a0dad;
+  }
+/*parte5*/
+.index-limited-c5  {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;
+  height: fit-content;
+  
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.index-limited-c5-up {
+margin-bottom: 50px;
+}
+
+.index-limited-c5-down  {
+  display: flex;
+
+  flex-wrap: wrap;
+}
+
+.index-limited-c5-down-left  {
+  display: flex;
+  width: 50%;
+  flex-wrap: wrap;
+}
+
+.index-limited-c5-down-right  {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  flex-wrap: wrap;
+ padding-left: 30px;
+}
+
+.index-limited-c5-down-right .contact-item  {
+  padding: 10px;
+  display: flex;
+
+  align-items: center;
+}
+.index-limited-c5-down-right .contact-item a  {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  font-size: 21.4px;
+}
+
+
+/**/
+.form-control2 {
+   
+  border:  1px solid rgba(250,250,250,1);
+  background-color:  rgba(250, 250, 250, 0);
+  margin-bottom: 30px;
+  color: #fff;
+  font-size: 14px;
+  height: 50px;
+  width: 100%;
+  padding-left: 15px;
+  outline: none;
+}
+.form-control3 {
+  
+  border:  1px solid rgba(250,250,250,1);
+  background-color:  rgba(250, 250, 250, 0); 
+  margin-bottom: 30px;
+  color: #fff;
+  font-size: 14px;
+  height: 180px;
+  width: 100%;
+  padding-left: 15px;
+  outline: none;
+}
+.btnlblue1 {
+  padding: 12px 22px;
+  background-color: #369;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border: none;
+  margin: 20px 0px 20px 0px;
+}
+  @media screen and (max-width: 620px) {
+    .index-limited-white-c-down-box {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+  } 
+  .index-limited-c5-down-left {
+    width: 100%;
+  }
+  .index-limited-c5-down-right {
+    width: 100%;
+    padding-left: 0px;
+  }
+
+
+
+}
